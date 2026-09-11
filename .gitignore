@@ -1,0 +1,26 @@
+# Datos (se descargan/generan con src/download_data.py, no se versionan)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.csv
+*.zip
+
+# Entornos y cachés de Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Modelos entrenados (pesan mucho, se regeneran con el código)
+models/*.pkl
+models/*.joblib
+models/*.h5
+
+# Sistema / editor
+.DS_Store
+.vscode/
+.idea/
